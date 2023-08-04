@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <!-- Add the reCAPTCHA script -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Add CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="register.php" method="post" onsubmit="return validateForm()">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <!-- Add the reCAPTCHA widget -->
+            <div class="g-recaptcha" data-sitekey="6LfUi2wnAAAAACeTnouTLQ9KLM5Dq8XwOxaychzV"></div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <!-- Add JavaScript for form validation -->
+    <script src="script.js"></script>
+</body>
+
+</html>
